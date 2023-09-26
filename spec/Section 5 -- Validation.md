@@ -1108,8 +1108,8 @@ fragment ownerFragment on Human {
 GetPossibleTypes(type):
 
 - If {type} is an object type, return a set containing {type}.
-- If {type} is an interface type, return the set of types implementing {type}.
-- If {type} is a union type, return the set of possible types of {type}.
+- If {type} is an interface type, return the set of object types implementing {type}.
+- If {type} is a union type, return the set of member types of {type}.
 
 **Explanatory Text**
 
